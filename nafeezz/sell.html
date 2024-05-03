@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="buy">
+           <button type="button" class="buy-btn" > <a href="index.html">BUY</a></button>
+        </div>
+        <div class="sell">
+            <button type="button" class="sell-btn"> <a href="sell.html">SELL</a>  </button>
+        </div>
+    </div>
+ -->
+
+    <!-- make a form 
+    <div class="myformdiv">
+
+    <form action="sell.php" method="POST">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form">
+            <label for="subject">Subject Code:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        /* background-image: url("https://t3.ftcdn.net/jpg/03/30/66/74/240_F_330667406_pWh6063Wkon5mE93tP4yIsi7TdaJ278i.jpg"); */
+        background-color: aliceblue;
+    }
+    
+    
+</style>
+<body>
+    <div class="nav">
+        <div class="buy">
+           <button type="button" class="buy-btn"><a href="index.html">BUY</a></button>
+        </div>
+        <div class="sell">
+            <button type="button" class="sell-btn"><a href="sell.html">SELL</a></button>
+        </div>
+    </div>
+
+    <!-- make a form -->
+    <div class="myformdiv">
+        <form id="sellForm" action="sell.php" method="POST" onsubmit="return showPopup()">
+            <div class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form">
+                <label for="subject">Subject Code:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function showPopup() {
+            alert("Submitted!");
+            return true; // returning true to submit the form
+        }
+    </script>
+</body>
+</html>
